@@ -1,0 +1,11 @@
+[resilient.circuits.components]
+FunctQradarGetOffenseMitreReferenceFunctionComponent = fn_qradar_mitre.components.funct_qradar_get_offense_mitre_reference:FunctionComponent
+
+[resilient.circuits.configsection]
+gen_config = fn_qradar_mitre.util.config:config_section_data
+
+[resilient.circuits.customize]
+customize = fn_qradar_mitre.util.customize:customization_data
+
+[resilient.circuits.selftest]
+selftest = fn_qradar_mitre.util.selftest:selftest_function

@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: fn-qradar-mitre
+Version: 1.0.0
+Summary: Functions the pull Mitre Tactics and Techniques from QRadar Rules.
+Home-page: http://ibm.biz/resilientcommunity
+Author: IBM Security SOAR
+Author-email: nick.mumaw@ibm.com
+License: MIT License
+Platform: any
+Classifier: Programming Language :: Python
+
+fn_qradar_mitre adds support to collect the MITRE reference from the rule that was fired causing the QRadar Offense that is being investigated. This allows us to determine the MITRE Tactic and Technique being used.
+

@@ -1,0 +1,48 @@
+{
+  "version": 2.0,
+  "success": true,
+  "reason": null,
+  "content": {
+    "rules": [
+      {
+        "id": 100551,
+        "identifier": "533c9470-e2ec-4726-b9c5-67585d50a7e1",
+        "name": "UBA : Create Offense",
+        "mapping": {}
+      },
+      {
+        "id": 130301,
+        "identifier": "dea6ba31-1383-4035-b006-a9064ff92984",
+        "name": "QRadar Audit: Shared Account",
+        "mapping": {
+          "Credential Access": {
+            "confidence": "high",
+            "user_override": false,
+            "enabled": true,
+            "ibm_default": true,
+            "id": "TA0006",
+            "techniques": {
+              "Exploitation for Credential Access": {
+                "confidence": "high",
+                "enabled": true,
+                "id": "T1212"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "raw": null,
+  "inputs": {
+    "qradar_offense_id": "1234"
+  },
+  "metrics": {
+    "version": "1.0",
+    "package": "fn-qradar-mitre",
+    "package_version": "1.0.0",
+    "host": "DESKTOP-CKMOLDQ",
+    "execution_time_ms": 4148,
+    "timestamp": "2022-02-03 15:17:25"
+  }
+}
