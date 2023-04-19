@@ -22,37 +22,18 @@ def snake_to_camel(word):
 
 setup(
     name="fn_relations",
-    display_name="fn_relations",
+    display_name="Parent/Child Relationships",
     version="1.0.2",
-    license="Apache2",
+    license="Apache",
     author="Nick Mumaw",
     author_email="Nick.Mumaw@ibm.com",
-    url="https://www.ibm.com/security/intelligent-orchestration/soar",
+    url="http://ibm.biz/soarcommunity",
     description="Builds Relationships of Incidents within IBM Security SOAR",
-    long_description="""This package consists of 5 Functions, 5 Workflows, and 6 Rules along with 2 new fields and 1 new data table.
-
-                        1. Assign Parent:
-
-                            Used to assign children incidents to a parent by supplying the incident ID of the parent. The function configures both parent incident and child incident appropriately.
-
-                        2. Remove Child Relation:
-
-                            Used to remove child relationship with parent by removing all related content created in the relationship.
-
-                        3. Sync Notes:
-
-                            This is used to sync notes between the parent and child incidents with 2 different rules.
-
-                        4. Sync Child Table Data:
-
-                            Used to update child information within the table if the incident name or status changes.
-
-                        5. Auto Close Child Incidents:
-
-                            Allows the closing of all child incidents listed in the parent data table.""",
+    long_description="""App used within the SOAR platform allowing the relationship building of incidents as Children and Parents.
+    The app will also allow syncing of notes between the incidents with a relationship, auto closing child incidents of a closed parent,
+    and syncing changes in child status with the parent datatable that shows all children.""",
     install_requires=[
-        "resilient-circuits>=45.0.0",
-        "resilient-lib>=45.0.0"
+        "resilient-circuits>=48.0.0"
     ],
     packages=find_packages(),
     include_package_data=True,

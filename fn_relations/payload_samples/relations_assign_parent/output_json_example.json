@@ -1,3 +1,297 @@
 {
-    
+  "child_artifact_results": {
+    "success": true,
+    "content": {
+      "id": 1500,
+      "type": 1040,
+      "value": "2315",
+      "description": "Parent Incident ID in Relationship",
+      "attachment": null,
+      "parent_id": null,
+      "inc_id": 2316,
+      "inc_name": "Sentinel Incident 1955 - Traffic detected from IP addresses recommended for blocking",
+      "inc_owner": 33,
+      "hits": [],
+      "created": 1681936004917,
+      "last_modified_time": 1681936004938,
+      "last_modified_by": {
+        "id": 49,
+        "type": "apikey",
+        "name": "6bf8c47e-77a6-41ad-ad22-1004f7eee7cb",
+        "display_name": "AppBuilder"
+      },
+      "pending_sources": [],
+      "perms": {
+        "read": true,
+        "write": true,
+        "delete": true
+      },
+      "properties": null,
+      "actions": [
+        {
+          "id": 23,
+          "name": "Update Data Table Row",
+          "enabled": false
+        },
+        {
+          "id": 96,
+          "name": "Example: XML Transformation",
+          "enabled": false
+        },
+        {
+          "id": 21,
+          "name": "Get Data Table Rows",
+          "enabled": false
+        },
+        {
+          "id": 91,
+          "name": "Example: Shell Command",
+          "enabled": false
+        },
+        {
+          "id": 92,
+          "name": "Example: String to Attachment",
+          "enabled": false
+        },
+        {
+          "id": 20,
+          "name": "Get Data Table Row",
+          "enabled": false
+        },
+        {
+          "id": 17,
+          "name": "Delete Data Table Rows",
+          "enabled": false
+        },
+        {
+          "id": 16,
+          "name": "Delete Data Table Row",
+          "enabled": false
+        },
+        {
+          "id": 100,
+          "name": "Add Row to Datatable",
+          "enabled": false
+        },
+        {
+          "id": 27,
+          "name": "Defender Find Machine by DNS name",
+          "enabled": false
+        },
+        {
+          "id": 28,
+          "name": "Defender Find Machines by File Hash",
+          "enabled": false
+        },
+        {
+          "id": 29,
+          "name": "Defender Find Machines by Internal IP Address",
+          "enabled": false
+        },
+        {
+          "id": 30,
+          "name": "Defender Get File Information",
+          "enabled": false
+        },
+        {
+          "id": 42,
+          "name": "Defender Set Indicator",
+          "enabled": false
+        },
+        {
+          "id": 75,
+          "name": "Example: (Artifact) Attachment to Base64",
+          "enabled": false
+        },
+        {
+          "id": 81,
+          "name": "Example: Email Parsing (Artifact)",
+          "enabled": false
+        },
+        {
+          "id": 79,
+          "name": "Example: Call REST API",
+          "enabled": false
+        },
+        {
+          "id": 76,
+          "name": "Example: Artifact Hash",
+          "enabled": false
+        },
+        {
+          "id": 83,
+          "name": "Example: Expand URL",
+          "enabled": false
+        },
+        {
+          "id": 84,
+          "name": "Example: Extract SSL Certificate",
+          "enabled": false
+        },
+        {
+          "id": 87,
+          "name": "Example: JSON2HTML",
+          "enabled": false
+        },
+        {
+          "id": 88,
+          "name": "Example: Parse SSL Certificate",
+          "enabled": false
+        },
+        {
+          "id": 210,
+          "name": "Example: LDAP Utilities: Remove User(s) from Group(s)",
+          "enabled": false
+        },
+        {
+          "id": 225,
+          "name": "QRadar Move from Sample Blocked to Sample Suspected",
+          "enabled": false
+        },
+        {
+          "id": 145,
+          "name": "Example: SEP - Get Endpoint Details for artifact",
+          "enabled": false
+        },
+        {
+          "id": 80,
+          "name": "Example: Domain Distance",
+          "enabled": false
+        },
+        {
+          "id": 142,
+          "name": "Example: SEP - Delete Hash from Blacklist",
+          "enabled": false
+        },
+        {
+          "id": 155,
+          "name": "Example: SEP - Initiate EOC Scan for Artifact",
+          "enabled": false
+        },
+        {
+          "id": 213,
+          "name": "Example: LDAP Utilities: Toggle Access",
+          "enabled": false
+        },
+        {
+          "id": 214,
+          "name": "Example: LDAP Utilities: Update",
+          "enabled": false
+        },
+        {
+          "id": 221,
+          "name": "Find All QRadar Reference Sets",
+          "enabled": true
+        },
+        {
+          "id": 222,
+          "name": "Find in QRadar Reference Set",
+          "enabled": true
+        },
+        {
+          "id": 223,
+          "name": "QRadar Add to Reference Set",
+          "enabled": false
+        },
+        {
+          "id": 191,
+          "name": "Example: Exchange Online Get User Profile",
+          "enabled": false
+        },
+        {
+          "id": 224,
+          "name": "QRadar Add to Reference Table",
+          "enabled": true
+        },
+        {
+          "id": 194,
+          "name": "Example: Exchange Online Query Messages on Artifact",
+          "enabled": false
+        },
+        {
+          "id": 139,
+          "name": "Example: SEP - Add Hash to Blacklist",
+          "enabled": false
+        },
+        {
+          "id": 205,
+          "name": "Schedule a Rule/Playbook to Run - Artifact",
+          "enabled": false
+        },
+        {
+          "id": 267,
+          "name": "Example: urlscan.io",
+          "enabled": false
+        },
+        {
+          "id": 209,
+          "name": "Example: LDAP Utilities: Add User(s) to Group(s)",
+          "enabled": false
+        },
+        {
+          "id": 211,
+          "name": "Example: LDAP Utilities: Search",
+          "enabled": false
+        },
+        {
+          "id": 212,
+          "name": "Example: LDAP Utilities: Set Password",
+          "enabled": false
+        }
+      ],
+      "playbooks": [],
+      "hash": "c4ee03d357b9cc98492a29d0a39f037408597da4a791a20d806ba753909b4db6",
+      "relating": true,
+      "creator_principal": {
+        "id": 49,
+        "type": "apikey",
+        "name": "6bf8c47e-77a6-41ad-ad22-1004f7eee7cb",
+        "display_name": "AppBuilder"
+      },
+      "related_incident_count": null,
+      "pending_scan_result": false,
+      "global_info": null,
+      "ip": {
+        "source": null,
+        "destination": null
+      },
+      "global_artifact": []
+    }
+  },
+  "table_addition_results": {
+    "success": true,
+    "content": {
+      "id": 1860,
+      "cells": {
+        "relations_incident_id": {
+          "id": "relations_incident_id",
+          "row_id": 1860,
+          "value": "<div class=\"rte\"><div><a href=\"#incidents/2316\" target=\"_blank\">2316</a></div></div>"
+        },
+        "relations_incident_name": {
+          "id": "relations_incident_name",
+          "row_id": 1860,
+          "value": "Sentinel Incident 1955 - Traffic detected from IP addresses recommended for blocking"
+        },
+        "relations_incident_status": {
+          "id": "relations_incident_status",
+          "row_id": 1860,
+          "value": "Active"
+        }
+      },
+      "actions": [],
+      "playbooks": [],
+      "type_id": 1043,
+      "table_name": "Relations Child Incidents",
+      "inc_id": 2315,
+      "inc_name": "Sentinel Incident 1956 - Traffic detected from IP addresses recommended for blocking",
+      "inc_owner": "Tier 1",
+      "version": 1
+    }
+  },
+  "parent_artifact_results": {
+    "success": false,
+    "content": "Parent Already in Artifacts"
+  },
+  "notes_synced": 6
 }

@@ -45,7 +45,7 @@
 | ------- | ---- | ----- |
 | 1.0.0 | 07/2020 | Initial Release |
 | 1.0.1 | 05/2021 | Add AppHost Support<br>Patch: Verification of Parent Incident before creating relation |
-| 1.0.2 | 04/2023 | Support for Python 3.9<br>Support for CP4S<br>Patch: Verification of Parent and Child Incidents are different |
+| 1.0.2 | 04/2023 | Support for Python 3.9<br>Support for CP4S<br>Patch: Verification of Parent and Child Incidents are different <br>Patch: Changed rules to only sync incident notes. |
 
 ---
 

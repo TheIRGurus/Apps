@@ -147,13 +147,6 @@
           "method": "equals",
           "type": null,
           "value": "Parent"
-        },
-        {
-          "evaluation_id": null,
-          "field_name": "task.id",
-          "method": "not_has_a_value",
-          "type": null,
-          "value": null
         }
       ],
       "enabled": true,
@@ -193,13 +186,6 @@
           "evaluation_id": null,
           "field_name": "incident.properties.relations_parent_id",
           "method": "has_a_value",
-          "type": null,
-          "value": null
-        },
-        {
-          "evaluation_id": null,
-          "field_name": "task.id",
-          "method": "not_has_a_value",
           "type": null,
           "value": null
         },
@@ -286,7 +272,7 @@
   ],
   "apps": [],
   "automatic_tasks": [],
-  "export_date": 1681937547144,
+  "export_date": 1681533170314,
   "export_format_version": 2,
   "export_type": null,
   "fields": [
@@ -615,13 +601,11 @@
         "name": "john_doe@company.com",
         "type": "user"
       },
-      "last_modified_time": 1681935238603,
+      "last_modified_time": 1681533143857,
       "name": "relations_assign_parent",
-      "output_json_example": "{}",
-      "output_json_schema": "{}",
       "tags": [],
       "uuid": "0c0afabc-263a-45b0-9dcf-8225ca010e6c",
-      "version": 2,
+      "version": 1,
       "view_items": [
         {
           "content": "acb92f9a-6593-4820-9d14-3b7eda74300f",
@@ -669,13 +653,11 @@
         "name": "john_doe@company.com",
         "type": "user"
       },
-      "last_modified_time": 1681935238727,
+      "last_modified_time": 1681533144090,
       "name": "relations_auto_close_child_incidents",
-      "output_json_example": "{}",
-      "output_json_schema": "{}",
       "tags": [],
       "uuid": "75127e2f-3446-4e3e-992b-e7e88321927e",
-      "version": 2,
+      "version": 1,
       "view_items": [
         {
           "content": "78b1bb0c-0961-4a6b-87e7-37878c3645ed",
@@ -715,13 +697,11 @@
         "name": "john_doe@company.com",
         "type": "user"
       },
-      "last_modified_time": 1681935238853,
+      "last_modified_time": 1681533144293,
       "name": "relations_remove_child_relation",
-      "output_json_example": "{}",
-      "output_json_schema": "{}",
       "tags": [],
       "uuid": "3ada2248-2dcb-415b-be77-b6ab43803500",
-      "version": 2,
+      "version": 1,
       "view_items": [
         {
           "content": "acb92f9a-6593-4820-9d14-3b7eda74300f",
@@ -769,13 +749,11 @@
         "name": "john_doe@company.com",
         "type": "user"
       },
-      "last_modified_time": 1681935238983,
+      "last_modified_time": 1681533144492,
       "name": "relations_sync_child_table_data",
-      "output_json_example": "{}",
-      "output_json_schema": "{}",
       "tags": [],
       "uuid": "250d88c8-e474-42b7-a2b6-673ecc3646bb",
-      "version": 2,
+      "version": 1,
       "view_items": [
         {
           "content": "acb92f9a-6593-4820-9d14-3b7eda74300f",
@@ -823,13 +801,11 @@
         "name": "john_doe@company.com",
         "type": "user"
       },
-      "last_modified_time": 1681935239112,
+      "last_modified_time": 1681533144668,
       "name": "relations_sync_notes",
-      "output_json_example": "{}",
-      "output_json_schema": "{}",
       "tags": [],
       "uuid": "4c26215f-66e7-4a75-a62e-8ce8a6707b2f",
-      "version": 2,
+      "version": 1,
       "view_items": [
         {
           "content": "811e99d7-d194-4ce8-86cc-aff5e01ab85c",
@@ -864,7 +840,7 @@
   ],
   "geos": null,
   "groups": null,
-  "id": 21,
+  "id": 17,
   "inbound_destinations": [],
   "inbound_mailboxes": null,
   "incident_artifact_types": [
@@ -889,7 +865,7 @@
   ],
   "incident_types": [
     {
-      "create_date": 1681937539982,
+      "create_date": 1681533167007,
       "description": "Customization Packages (internal)",
       "enabled": false,
       "export_key": "Customization Packages (internal)",
@@ -898,7 +874,7 @@
       "name": "Customization Packages (internal)",
       "parent_id": null,
       "system": false,
-      "update_date": 1681937539982,
+      "update_date": 1681533167007,
       "uuid": "bfeec2d4-3770-11e8-ad39-4a0004044aa0"
     }
   ],
@@ -908,8 +884,7 @@
   "message_destinations": [
     {
       "api_keys": [
-        "5bea9d0b-c279-4e11-baf8-18cb8995a72a",
-        "6bf8c47e-77a6-41ad-ad22-1004f7eee7cb"
+        "5bea9d0b-c279-4e11-baf8-18cb8995a72a"
       ],
       "destination_type": 0,
       "expect_ack": true,
@@ -1100,25 +1075,6 @@
       "actions": [],
       "content": {
         "version": 5,
-        "workflow_id": "example_relations_sync_notes_to_parentchild",
-        "xml": "\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u003e\u003cdefinitions xmlns=\"http://www.omg.org/spec/BPMN/20100524/MODEL\" xmlns:bpmndi=\"http://www.omg.org/spec/BPMN/20100524/DI\" xmlns:omgdc=\"http://www.omg.org/spec/DD/20100524/DC\" xmlns:omgdi=\"http://www.omg.org/spec/DD/20100524/DI\" xmlns:resilient=\"http://resilient.ibm.com/bpmn\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" targetNamespace=\"http://www.camunda.org/test\"\u003e\u003cprocess id=\"example_relations_sync_notes_to_parentchild\" isExecutable=\"true\" name=\"Example: Relations: Sync Notes to Parent/Child\"\u003e\u003cdocumentation\u003eSync any new notes created in the parent or child to either the children incidents (if this is labeled as a parent) or the parent incident (if this is labeled as a child).\u003c/documentation\u003e\u003cstartEvent id=\"StartEvent_155asxm\"\u003e\u003coutgoing\u003eSequenceFlow_1thvvpx\u003c/outgoing\u003e\u003c/startEvent\u003e\u003cserviceTask id=\"ServiceTask_1gzt9n8\" name=\"Relations: Sync Notes\" resilient:type=\"function\"\u003e\u003cextensionElements\u003e\u003cresilient:function uuid=\"4c26215f-66e7-4a75-a62e-8ce8a6707b2f\"\u003e{\"inputs\":{},\"pre_processing_script\":\"inputs.relations_note_id = note.id\\ninputs.incident_id = incident.id\\n\",\"result_name\":\"\"}\u003c/resilient:function\u003e\u003c/extensionElements\u003e\u003cincoming\u003eSequenceFlow_1thvvpx\u003c/incoming\u003e\u003coutgoing\u003eSequenceFlow_1ds0wb9\u003c/outgoing\u003e\u003c/serviceTask\u003e\u003csequenceFlow id=\"SequenceFlow_1thvvpx\" sourceRef=\"StartEvent_155asxm\" targetRef=\"ServiceTask_1gzt9n8\"/\u003e\u003cendEvent id=\"EndEvent_1rjwgid\"\u003e\u003cincoming\u003eSequenceFlow_1ds0wb9\u003c/incoming\u003e\u003c/endEvent\u003e\u003csequenceFlow id=\"SequenceFlow_1ds0wb9\" sourceRef=\"ServiceTask_1gzt9n8\" targetRef=\"EndEvent_1rjwgid\"/\u003e\u003ctextAnnotation id=\"TextAnnotation_1kxxiyt\"\u003e\u003ctext\u003eStart your workflow here\u003c/text\u003e\u003c/textAnnotation\u003e\u003cassociation id=\"Association_1seuj48\" sourceRef=\"StartEvent_155asxm\" targetRef=\"TextAnnotation_1kxxiyt\"/\u003e\u003c/process\u003e\u003cbpmndi:BPMNDiagram id=\"BPMNDiagram_1\"\u003e\u003cbpmndi:BPMNPlane bpmnElement=\"undefined\" id=\"BPMNPlane_1\"\u003e\u003cbpmndi:BPMNShape bpmnElement=\"StartEvent_155asxm\" id=\"StartEvent_155asxm_di\"\u003e\u003comgdc:Bounds height=\"36\" width=\"36\" x=\"162\" y=\"188\"/\u003e\u003cbpmndi:BPMNLabel\u003e\u003comgdc:Bounds height=\"0\" width=\"90\" x=\"157\" y=\"223\"/\u003e\u003c/bpmndi:BPMNLabel\u003e\u003c/bpmndi:BPMNShape\u003e\u003cbpmndi:BPMNShape bpmnElement=\"TextAnnotation_1kxxiyt\" id=\"TextAnnotation_1kxxiyt_di\"\u003e\u003comgdc:Bounds height=\"30\" width=\"100\" x=\"99\" y=\"254\"/\u003e\u003c/bpmndi:BPMNShape\u003e\u003cbpmndi:BPMNEdge bpmnElement=\"Association_1seuj48\" id=\"Association_1seuj48_di\"\u003e\u003comgdi:waypoint x=\"169\" xsi:type=\"omgdc:Point\" y=\"220\"/\u003e\u003comgdi:waypoint x=\"153\" xsi:type=\"omgdc:Point\" y=\"254\"/\u003e\u003c/bpmndi:BPMNEdge\u003e\u003cbpmndi:BPMNShape bpmnElement=\"ServiceTask_1gzt9n8\" id=\"ServiceTask_1gzt9n8_di\"\u003e\u003comgdc:Bounds height=\"80\" width=\"100\" x=\"521\" y=\"166\"/\u003e\u003c/bpmndi:BPMNShape\u003e\u003cbpmndi:BPMNEdge bpmnElement=\"SequenceFlow_1thvvpx\" id=\"SequenceFlow_1thvvpx_di\"\u003e\u003comgdi:waypoint x=\"198\" xsi:type=\"omgdc:Point\" y=\"206\"/\u003e\u003comgdi:waypoint x=\"521\" xsi:type=\"omgdc:Point\" y=\"206\"/\u003e\u003cbpmndi:BPMNLabel\u003e\u003comgdc:Bounds height=\"13\" width=\"0\" x=\"359.5\" y=\"184\"/\u003e\u003c/bpmndi:BPMNLabel\u003e\u003c/bpmndi:BPMNEdge\u003e\u003cbpmndi:BPMNShape bpmnElement=\"EndEvent_1rjwgid\" id=\"EndEvent_1rjwgid_di\"\u003e\u003comgdc:Bounds height=\"36\" width=\"36\" x=\"908\" y=\"188\"/\u003e\u003cbpmndi:BPMNLabel\u003e\u003comgdc:Bounds height=\"13\" width=\"0\" x=\"926\" y=\"227\"/\u003e\u003c/bpmndi:BPMNLabel\u003e\u003c/bpmndi:BPMNShape\u003e\u003cbpmndi:BPMNEdge bpmnElement=\"SequenceFlow_1ds0wb9\" id=\"SequenceFlow_1ds0wb9_di\"\u003e\u003comgdi:waypoint x=\"621\" xsi:type=\"omgdc:Point\" y=\"206\"/\u003e\u003comgdi:waypoint x=\"908\" xsi:type=\"omgdc:Point\" y=\"206\"/\u003e\u003cbpmndi:BPMNLabel\u003e\u003comgdc:Bounds height=\"13\" width=\"0\" x=\"764.5\" y=\"184\"/\u003e\u003c/bpmndi:BPMNLabel\u003e\u003c/bpmndi:BPMNEdge\u003e\u003c/bpmndi:BPMNPlane\u003e\u003c/bpmndi:BPMNDiagram\u003e\u003c/definitions\u003e"
-      },
-      "content_version": 5,
-      "description": "Sync any new notes created in the parent or child to either the children incidents (if this is labeled as a parent) or the parent incident (if this is labeled as a child).",
-      "export_key": "example_relations_sync_notes_to_parentchild",
-      "last_modified_by": "john_doe@company.com",
-      "last_modified_time": 1681533146443,
-      "name": "Example: Relations: Sync Notes to Parent/Child",
-      "object_type": "note",
-      "programmatic_name": "example_relations_sync_notes_to_parentchild",
-      "tags": [],
-      "uuid": "197172e5-3b3f-4bd6-903f-22684305faa3",
-      "workflow_id": 329
-    },
-    {
-      "actions": [],
-      "content": {
-        "version": 5,
         "workflow_id": "example_relations_assign_parent",
         "xml": "\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u003e\u003cdefinitions xmlns=\"http://www.omg.org/spec/BPMN/20100524/MODEL\" xmlns:bpmndi=\"http://www.omg.org/spec/BPMN/20100524/DI\" xmlns:omgdc=\"http://www.omg.org/spec/DD/20100524/DC\" xmlns:omgdi=\"http://www.omg.org/spec/DD/20100524/DI\" xmlns:resilient=\"http://resilient.ibm.com/bpmn\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" targetNamespace=\"http://www.camunda.org/test\"\u003e\u003cprocess id=\"example_relations_assign_parent\" isExecutable=\"true\" name=\"Example: Relations: Assign Parent\"\u003e\u003cdocumentation\u003eChange the necessary information to establish a child/parent relationship.\u003c/documentation\u003e\u003cstartEvent id=\"StartEvent_155asxm\"\u003e\u003coutgoing\u003eSequenceFlow_0cr3jwa\u003c/outgoing\u003e\u003c/startEvent\u003e\u003cendEvent id=\"EndEvent_16awlp0\"\u003e\u003cincoming\u003eSequenceFlow_0y8dbv3\u003c/incoming\u003e\u003c/endEvent\u003e\u003csequenceFlow id=\"SequenceFlow_0cr3jwa\" sourceRef=\"StartEvent_155asxm\" targetRef=\"ServiceTask_0vndp95\"/\u003e\u003cserviceTask id=\"ServiceTask_0vndp95\" name=\"Relations: Assign Parent\" resilient:type=\"function\"\u003e\u003cextensionElements\u003e\u003cresilient:function uuid=\"0c0afabc-263a-45b0-9dcf-8225ca010e6c\"\u003e{\"inputs\":{},\"pre_processing_script\":\"inputs.relations_child_incident_id = incident.id\\ninputs.relations_parent_incident_id = rule.properties.relations_parent_incident\\n\"}\u003c/resilient:function\u003e\u003c/extensionElements\u003e\u003cincoming\u003eSequenceFlow_0cr3jwa\u003c/incoming\u003e\u003coutgoing\u003eSequenceFlow_0y8dbv3\u003c/outgoing\u003e\u003c/serviceTask\u003e\u003csequenceFlow id=\"SequenceFlow_0y8dbv3\" sourceRef=\"ServiceTask_0vndp95\" targetRef=\"EndEvent_16awlp0\"/\u003e\u003ctextAnnotation id=\"TextAnnotation_1kxxiyt\"\u003e\u003ctext\u003eStart your workflow here\u003c/text\u003e\u003c/textAnnotation\u003e\u003cassociation id=\"Association_1seuj48\" sourceRef=\"StartEvent_155asxm\" targetRef=\"TextAnnotation_1kxxiyt\"/\u003e\u003c/process\u003e\u003cbpmndi:BPMNDiagram id=\"BPMNDiagram_1\"\u003e\u003cbpmndi:BPMNPlane bpmnElement=\"undefined\" id=\"BPMNPlane_1\"\u003e\u003cbpmndi:BPMNShape bpmnElement=\"StartEvent_155asxm\" id=\"StartEvent_155asxm_di\"\u003e\u003comgdc:Bounds height=\"36\" width=\"36\" x=\"162\" y=\"188\"/\u003e\u003cbpmndi:BPMNLabel\u003e\u003comgdc:Bounds height=\"0\" width=\"90\" x=\"157\" y=\"223\"/\u003e\u003c/bpmndi:BPMNLabel\u003e\u003c/bpmndi:BPMNShape\u003e\u003cbpmndi:BPMNShape bpmnElement=\"TextAnnotation_1kxxiyt\" id=\"TextAnnotation_1kxxiyt_di\"\u003e\u003comgdc:Bounds height=\"30\" width=\"100\" x=\"99\" y=\"254\"/\u003e\u003c/bpmndi:BPMNShape\u003e\u003cbpmndi:BPMNEdge bpmnElement=\"Association_1seuj48\" id=\"Association_1seuj48_di\"\u003e\u003comgdi:waypoint x=\"169\" xsi:type=\"omgdc:Point\" y=\"220\"/\u003e\u003comgdi:waypoint x=\"153\" xsi:type=\"omgdc:Point\" y=\"254\"/\u003e\u003c/bpmndi:BPMNEdge\u003e\u003cbpmndi:BPMNShape bpmnElement=\"EndEvent_16awlp0\" id=\"EndEvent_16awlp0_di\"\u003e\u003comgdc:Bounds height=\"36\" width=\"36\" x=\"829\" y=\"188\"/\u003e\u003cbpmndi:BPMNLabel\u003e\u003comgdc:Bounds height=\"13\" width=\"0\" x=\"847\" y=\"227\"/\u003e\u003c/bpmndi:BPMNLabel\u003e\u003c/bpmndi:BPMNShape\u003e\u003cbpmndi:BPMNEdge bpmnElement=\"SequenceFlow_0cr3jwa\" id=\"SequenceFlow_0cr3jwa_di\"\u003e\u003comgdi:waypoint x=\"198\" xsi:type=\"omgdc:Point\" y=\"206\"/\u003e\u003comgdi:waypoint x=\"439\" xsi:type=\"omgdc:Point\" y=\"206\"/\u003e\u003cbpmndi:BPMNLabel\u003e\u003comgdc:Bounds height=\"13\" width=\"0\" x=\"318.5\" y=\"184.5\"/\u003e\u003c/bpmndi:BPMNLabel\u003e\u003c/bpmndi:BPMNEdge\u003e\u003cbpmndi:BPMNShape bpmnElement=\"ServiceTask_0vndp95\" id=\"ServiceTask_0vndp95_di\"\u003e\u003comgdc:Bounds height=\"80\" width=\"100\" x=\"439\" y=\"166\"/\u003e\u003c/bpmndi:BPMNShape\u003e\u003cbpmndi:BPMNEdge bpmnElement=\"SequenceFlow_0y8dbv3\" id=\"SequenceFlow_0y8dbv3_di\"\u003e\u003comgdi:waypoint x=\"539\" xsi:type=\"omgdc:Point\" y=\"206\"/\u003e\u003comgdi:waypoint x=\"829\" xsi:type=\"omgdc:Point\" y=\"206\"/\u003e\u003cbpmndi:BPMNLabel\u003e\u003comgdc:Bounds height=\"13\" width=\"0\" x=\"684\" y=\"184\"/\u003e\u003c/bpmndi:BPMNLabel\u003e\u003c/bpmndi:BPMNEdge\u003e\u003c/bpmndi:BPMNPlane\u003e\u003c/bpmndi:BPMNDiagram\u003e\u003c/definitions\u003e"
       },
@@ -1152,6 +1108,25 @@
       "tags": [],
       "uuid": "3be764f1-e29a-4d48-8fe6-6cbf8dda9686",
       "workflow_id": 327
+    },
+    {
+      "actions": [],
+      "content": {
+        "version": 5,
+        "workflow_id": "example_relations_sync_notes_to_parentchild",
+        "xml": "\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u003e\u003cdefinitions xmlns=\"http://www.omg.org/spec/BPMN/20100524/MODEL\" xmlns:bpmndi=\"http://www.omg.org/spec/BPMN/20100524/DI\" xmlns:omgdc=\"http://www.omg.org/spec/DD/20100524/DC\" xmlns:omgdi=\"http://www.omg.org/spec/DD/20100524/DI\" xmlns:resilient=\"http://resilient.ibm.com/bpmn\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" targetNamespace=\"http://www.camunda.org/test\"\u003e\u003cprocess id=\"example_relations_sync_notes_to_parentchild\" isExecutable=\"true\" name=\"Example: Relations: Sync Notes to Parent/Child\"\u003e\u003cdocumentation\u003eSync any new notes created in the parent or child to either the children incidents (if this is labeled as a parent) or the parent incident (if this is labeled as a child).\u003c/documentation\u003e\u003cstartEvent id=\"StartEvent_155asxm\"\u003e\u003coutgoing\u003eSequenceFlow_1thvvpx\u003c/outgoing\u003e\u003c/startEvent\u003e\u003cserviceTask id=\"ServiceTask_1gzt9n8\" name=\"Relations: Sync Notes\" resilient:type=\"function\"\u003e\u003cextensionElements\u003e\u003cresilient:function uuid=\"4c26215f-66e7-4a75-a62e-8ce8a6707b2f\"\u003e{\"inputs\":{},\"pre_processing_script\":\"inputs.relations_note_id = note.id\\ninputs.incident_id = incident.id\\n\",\"result_name\":\"\"}\u003c/resilient:function\u003e\u003c/extensionElements\u003e\u003cincoming\u003eSequenceFlow_1thvvpx\u003c/incoming\u003e\u003coutgoing\u003eSequenceFlow_1ds0wb9\u003c/outgoing\u003e\u003c/serviceTask\u003e\u003csequenceFlow id=\"SequenceFlow_1thvvpx\" sourceRef=\"StartEvent_155asxm\" targetRef=\"ServiceTask_1gzt9n8\"/\u003e\u003cendEvent id=\"EndEvent_1rjwgid\"\u003e\u003cincoming\u003eSequenceFlow_1ds0wb9\u003c/incoming\u003e\u003c/endEvent\u003e\u003csequenceFlow id=\"SequenceFlow_1ds0wb9\" sourceRef=\"ServiceTask_1gzt9n8\" targetRef=\"EndEvent_1rjwgid\"/\u003e\u003ctextAnnotation id=\"TextAnnotation_1kxxiyt\"\u003e\u003ctext\u003eStart your workflow here\u003c/text\u003e\u003c/textAnnotation\u003e\u003cassociation id=\"Association_1seuj48\" sourceRef=\"StartEvent_155asxm\" targetRef=\"TextAnnotation_1kxxiyt\"/\u003e\u003c/process\u003e\u003cbpmndi:BPMNDiagram id=\"BPMNDiagram_1\"\u003e\u003cbpmndi:BPMNPlane bpmnElement=\"undefined\" id=\"BPMNPlane_1\"\u003e\u003cbpmndi:BPMNShape bpmnElement=\"StartEvent_155asxm\" id=\"StartEvent_155asxm_di\"\u003e\u003comgdc:Bounds height=\"36\" width=\"36\" x=\"162\" y=\"188\"/\u003e\u003cbpmndi:BPMNLabel\u003e\u003comgdc:Bounds height=\"0\" width=\"90\" x=\"157\" y=\"223\"/\u003e\u003c/bpmndi:BPMNLabel\u003e\u003c/bpmndi:BPMNShape\u003e\u003cbpmndi:BPMNShape bpmnElement=\"TextAnnotation_1kxxiyt\" id=\"TextAnnotation_1kxxiyt_di\"\u003e\u003comgdc:Bounds height=\"30\" width=\"100\" x=\"99\" y=\"254\"/\u003e\u003c/bpmndi:BPMNShape\u003e\u003cbpmndi:BPMNEdge bpmnElement=\"Association_1seuj48\" id=\"Association_1seuj48_di\"\u003e\u003comgdi:waypoint x=\"169\" xsi:type=\"omgdc:Point\" y=\"220\"/\u003e\u003comgdi:waypoint x=\"153\" xsi:type=\"omgdc:Point\" y=\"254\"/\u003e\u003c/bpmndi:BPMNEdge\u003e\u003cbpmndi:BPMNShape bpmnElement=\"ServiceTask_1gzt9n8\" id=\"ServiceTask_1gzt9n8_di\"\u003e\u003comgdc:Bounds height=\"80\" width=\"100\" x=\"521\" y=\"166\"/\u003e\u003c/bpmndi:BPMNShape\u003e\u003cbpmndi:BPMNEdge bpmnElement=\"SequenceFlow_1thvvpx\" id=\"SequenceFlow_1thvvpx_di\"\u003e\u003comgdi:waypoint x=\"198\" xsi:type=\"omgdc:Point\" y=\"206\"/\u003e\u003comgdi:waypoint x=\"521\" xsi:type=\"omgdc:Point\" y=\"206\"/\u003e\u003cbpmndi:BPMNLabel\u003e\u003comgdc:Bounds height=\"13\" width=\"0\" x=\"359.5\" y=\"184\"/\u003e\u003c/bpmndi:BPMNLabel\u003e\u003c/bpmndi:BPMNEdge\u003e\u003cbpmndi:BPMNShape bpmnElement=\"EndEvent_1rjwgid\" id=\"EndEvent_1rjwgid_di\"\u003e\u003comgdc:Bounds height=\"36\" width=\"36\" x=\"908\" y=\"188\"/\u003e\u003cbpmndi:BPMNLabel\u003e\u003comgdc:Bounds height=\"13\" width=\"0\" x=\"926\" y=\"227\"/\u003e\u003c/bpmndi:BPMNLabel\u003e\u003c/bpmndi:BPMNShape\u003e\u003cbpmndi:BPMNEdge bpmnElement=\"SequenceFlow_1ds0wb9\" id=\"SequenceFlow_1ds0wb9_di\"\u003e\u003comgdi:waypoint x=\"621\" xsi:type=\"omgdc:Point\" y=\"206\"/\u003e\u003comgdi:waypoint x=\"908\" xsi:type=\"omgdc:Point\" y=\"206\"/\u003e\u003cbpmndi:BPMNLabel\u003e\u003comgdc:Bounds height=\"13\" width=\"0\" x=\"764.5\" y=\"184\"/\u003e\u003c/bpmndi:BPMNLabel\u003e\u003c/bpmndi:BPMNEdge\u003e\u003c/bpmndi:BPMNPlane\u003e\u003c/bpmndi:BPMNDiagram\u003e\u003c/definitions\u003e"
+      },
+      "content_version": 5,
+      "description": "Sync any new notes created in the parent or child to either the children incidents (if this is labeled as a parent) or the parent incident (if this is labeled as a child).",
+      "export_key": "example_relations_sync_notes_to_parentchild",
+      "last_modified_by": "john_doe@company.com",
+      "last_modified_time": 1681533146443,
+      "name": "Example: Relations: Sync Notes to Parent/Child",
+      "object_type": "note",
+      "programmatic_name": "example_relations_sync_notes_to_parentchild",
+      "tags": [],
+      "uuid": "197172e5-3b3f-4bd6-903f-22684305faa3",
+      "workflow_id": 329
     },
     {
       "actions": [],

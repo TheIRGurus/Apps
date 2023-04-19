@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# Generated with resilient-sdk v48.0.4034
 """Tests using pytest_resilient_circuits"""
 
 import pytest
@@ -48,15 +49,15 @@ class TestRelationsSyncNotes:
         assert func is not None
 
     mock_inputs_1 = {
-        "incident_id": 123,
-        "relations_note_id": 123
+        "relations_note_id": 123,
+        "incident_id": 123
     }
 
     expected_results_1 = {"value": "xyz"}
 
     mock_inputs_2 = {
-        "incident_id": 123,
-        "relations_note_id": 123
+        "relations_note_id": 123,
+        "incident_id": 123
     }
 
     expected_results_2 = {"value": "xyz"}
