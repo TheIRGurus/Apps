@@ -16,7 +16,9 @@
   NOTE: If your app is available in the container-format only, there is no need to mention the integration server in this readme.
 -->
 
-# fn_qradar_mitre
+# fn_qradar_mitre (<font color=red>Discontinued</font>)
+
+<font color=red>**This app and its playbooks have been discontinued due to this integration being incorperated into the QRadar Enhanced Data Migration App**</font>
 
 ## Table of Contents
 - [Release Notes](#release-notes)
