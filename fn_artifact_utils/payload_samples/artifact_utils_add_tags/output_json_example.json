@@ -1,0 +1,165 @@
+{
+  "version": 2.0,
+  "success": true,
+  "reason": null,
+  "content": {
+    "537": {
+      "id": 537,
+      "type": 1,
+      "value": "10.10.10.10",
+      "description": null,
+      "summary": null,
+      "creator": {
+        "id": 1,
+        "type": "user",
+        "name": "john_doe@company.com",
+        "display_name": "John Doe"
+      },
+      "created": 1683824680171,
+      "last_modified_by": {
+        "id": 49,
+        "type": "apikey",
+        "name": "6bf8c47e-77a6-41ad-ad22-1004f7eee7cb",
+        "display_name": "AppBuilder"
+      },
+      "last_modified_time": 1683874565588,
+      "related_incident_count": 1,
+      "last_related_inc_id": 2325,
+      "last_related_inc_owner_handle": 33,
+      "first_related_inc_id": 2325,
+      "first_related_inc_owner_handle": 33,
+      "perms": {
+        "write": true
+      },
+      "first_associated_time": 1683824680171,
+      "last_associated_time": 1683824680171,
+      "properties": null,
+      "tags": [
+        {
+          "tag_handle": 134,
+          "value": null
+        },
+        {
+          "tag_handle": 127,
+          "value": null
+        }
+      ],
+      "version": 14,
+      "scan_option": "on",
+      "relating_incidents": true,
+      "hit_threat_sources": [],
+      "relating": true,
+      "last_scan_hits": []
+    },
+    "542": {
+      "id": 542,
+      "type": 1,
+      "value": "10.156.54.204",
+      "description": null,
+      "summary": null,
+      "creator": {
+        "id": 1,
+        "type": "user",
+        "name": "john_doe@company.com",
+        "display_name": "John Doe"
+      },
+      "created": 1683873651813,
+      "last_modified_by": {
+        "id": 49,
+        "type": "apikey",
+        "name": "6bf8c47e-77a6-41ad-ad22-1004f7eee7cb",
+        "display_name": "AppBuilder"
+      },
+      "last_modified_time": 1683874056253,
+      "related_incident_count": 1,
+      "last_related_inc_id": 2325,
+      "last_related_inc_owner_handle": 33,
+      "first_related_inc_id": 2325,
+      "first_related_inc_owner_handle": 33,
+      "perms": {
+        "write": true
+      },
+      "first_associated_time": 1683873651813,
+      "last_associated_time": 1683873651813,
+      "properties": null,
+      "tags": [
+        {
+          "tag_handle": 134,
+          "value": null
+        },
+        {
+          "tag_handle": 127,
+          "value": null
+        }
+      ],
+      "version": 1,
+      "scan_option": "on",
+      "relating_incidents": true,
+      "hit_threat_sources": [],
+      "relating": true,
+      "last_scan_hits": []
+    },
+    "543": {
+      "id": 543,
+      "type": 1,
+      "value": "10.16.157.4",
+      "description": null,
+      "summary": null,
+      "creator": {
+        "id": 1,
+        "type": "user",
+        "name": "john_doe@company.com",
+        "display_name": "John Doe"
+      },
+      "created": 1683873651839,
+      "last_modified_by": {
+        "id": 49,
+        "type": "apikey",
+        "name": "6bf8c47e-77a6-41ad-ad22-1004f7eee7cb",
+        "display_name": "AppBuilder"
+      },
+      "last_modified_time": 1683874055257,
+      "related_incident_count": 1,
+      "last_related_inc_id": 2325,
+      "last_related_inc_owner_handle": 33,
+      "first_related_inc_id": 2325,
+      "first_related_inc_owner_handle": 33,
+      "perms": {
+        "write": true
+      },
+      "first_associated_time": 1683873651839,
+      "last_associated_time": 1683873651839,
+      "properties": null,
+      "tags": [
+        {
+          "tag_handle": 134,
+          "value": null
+        },
+        {
+          "tag_handle": 127,
+          "value": null
+        }
+      ],
+      "version": 1,
+      "scan_option": "on",
+      "relating_incidents": true,
+      "hit_threat_sources": [],
+      "relating": true,
+      "last_scan_hits": []
+    }
+  },
+  "raw": null,
+  "inputs": {
+    "artifact_tag_values": "Malicious,Internal",
+    "incident_id": 2325,
+    "artifact_id_list": "1532,1538,1539"
+  },
+  "metrics": {
+    "version": "1.0",
+    "package": "fn-artifact-utils",
+    "package_version": "1.0.0",
+    "host": "IBM-PF36KPAV",
+    "execution_time_ms": 4170,
+    "timestamp": "2023-05-12 02:56:07"
+  }
+}

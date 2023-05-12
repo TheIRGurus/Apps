@@ -1,0 +1,418 @@
+{
+  "version": 2.0,
+  "success": true,
+  "reason": null,
+  "content": {
+    "recordsTotal": 1,
+    "recordsFiltered": 1,
+    "data": [
+      {
+        "id": 1532,
+        "type": "IP Address",
+        "value": "10.10.10.10",
+        "description": null,
+        "attachment": null,
+        "parent_id": null,
+        "creator": {
+          "id": 1,
+          "fname": "John",
+          "lname": "Doe",
+          "display_name": "John Doe",
+          "status": "A",
+          "email": "john_doe@company.com",
+          "locked": false,
+          "password_changed": false,
+          "is_external": false,
+          "ui_theme": "verydarkmode",
+          "is_ldap": false,
+          "is_saml": false
+        },
+        "inc_id": 2325,
+        "inc_name": "Sentinel Incident 1965 - First access credential added to Application or Service Principal where no credential was present",
+        "inc_owner": "Tier 1",
+        "hits": [],
+        "created": 1683824680171,
+        "last_modified_time": 1683844894105,
+        "last_modified_by": {
+          "id": 49,
+          "type": "apikey",
+          "name": "6bf8c47e-77a6-41ad-ad22-1004f7eee7cb",
+          "display_name": "AppBuilder"
+        },
+        "pending_sources": [],
+        "perms": {
+          "read": true,
+          "write": true,
+          "delete": true
+        },
+        "properties": [
+          {
+            "name": "destination",
+            "value": "false"
+          },
+          {
+            "name": "source",
+            "value": "false"
+          }
+        ],
+        "actions": [
+          {
+            "id": 23,
+            "name": "Update Data Table Row",
+            "enabled": false
+          },
+          {
+            "id": 96,
+            "name": "Example: XML Transformation",
+            "enabled": false
+          },
+          {
+            "id": 21,
+            "name": "Get Data Table Rows",
+            "enabled": false
+          },
+          {
+            "id": 91,
+            "name": "Example: Shell Command",
+            "enabled": false
+          },
+          {
+            "id": 92,
+            "name": "Example: String to Attachment",
+            "enabled": false
+          },
+          {
+            "id": 20,
+            "name": "Get Data Table Row",
+            "enabled": false
+          },
+          {
+            "id": 17,
+            "name": "Delete Data Table Rows",
+            "enabled": false
+          },
+          {
+            "id": 16,
+            "name": "Delete Data Table Row",
+            "enabled": false
+          },
+          {
+            "id": 100,
+            "name": "Add Row to Datatable",
+            "enabled": false
+          },
+          {
+            "id": 27,
+            "name": "Defender Find Machine by DNS name",
+            "enabled": false
+          },
+          {
+            "id": 28,
+            "name": "Defender Find Machines by File Hash",
+            "enabled": false
+          },
+          {
+            "id": 29,
+            "name": "Defender Find Machines by Internal IP Address",
+            "enabled": true
+          },
+          {
+            "id": 30,
+            "name": "Defender Get File Information",
+            "enabled": false
+          },
+          {
+            "id": 42,
+            "name": "Defender Set Indicator",
+            "enabled": true
+          },
+          {
+            "id": 75,
+            "name": "Example: (Artifact) Attachment to Base64",
+            "enabled": false
+          },
+          {
+            "id": 81,
+            "name": "Example: Email Parsing (Artifact)",
+            "enabled": false
+          },
+          {
+            "id": 79,
+            "name": "Example: Call REST API",
+            "enabled": false
+          },
+          {
+            "id": 76,
+            "name": "Example: Artifact Hash",
+            "enabled": false
+          },
+          {
+            "id": 83,
+            "name": "Example: Expand URL",
+            "enabled": false
+          },
+          {
+            "id": 84,
+            "name": "Example: Extract SSL Certificate",
+            "enabled": false
+          },
+          {
+            "id": 87,
+            "name": "Example: JSON2HTML",
+            "enabled": false
+          },
+          {
+            "id": 88,
+            "name": "Example: Parse SSL Certificate",
+            "enabled": false
+          },
+          {
+            "id": 210,
+            "name": "Example: LDAP Utilities: Remove User(s) from Group(s)",
+            "enabled": false
+          },
+          {
+            "id": 225,
+            "name": "QRadar Move from Sample Blocked to Sample Suspected",
+            "enabled": false
+          },
+          {
+            "id": 145,
+            "name": "Example: SEP - Get Endpoint Details for artifact",
+            "enabled": false
+          },
+          {
+            "id": 80,
+            "name": "Example: Domain Distance",
+            "enabled": false
+          },
+          {
+            "id": 142,
+            "name": "Example: SEP - Delete Hash from Blacklist",
+            "enabled": false
+          },
+          {
+            "id": 155,
+            "name": "Example: SEP - Initiate EOC Scan for Artifact",
+            "enabled": false
+          },
+          {
+            "id": 213,
+            "name": "Example: LDAP Utilities: Toggle Access",
+            "enabled": false
+          },
+          {
+            "id": 214,
+            "name": "Example: LDAP Utilities: Update",
+            "enabled": false
+          },
+          {
+            "id": 221,
+            "name": "Find All QRadar Reference Sets",
+            "enabled": true
+          },
+          {
+            "id": 222,
+            "name": "Find in QRadar Reference Set",
+            "enabled": true
+          },
+          {
+            "id": 223,
+            "name": "QRadar Add to Reference Set",
+            "enabled": true
+          },
+          {
+            "id": 191,
+            "name": "Example: Exchange Online Get User Profile",
+            "enabled": false
+          },
+          {
+            "id": 224,
+            "name": "QRadar Add to Reference Table",
+            "enabled": true
+          },
+          {
+            "id": 194,
+            "name": "Example: Exchange Online Query Messages on Artifact",
+            "enabled": false
+          },
+          {
+            "id": 139,
+            "name": "Example: SEP - Add Hash to Blacklist",
+            "enabled": false
+          },
+          {
+            "id": 205,
+            "name": "Schedule a Rule/Playbook to Run - Artifact",
+            "enabled": false
+          },
+          {
+            "id": 267,
+            "name": "Example: urlscan.io",
+            "enabled": false
+          },
+          {
+            "id": 209,
+            "name": "Example: LDAP Utilities: Add User(s) to Group(s)",
+            "enabled": false
+          },
+          {
+            "id": 211,
+            "name": "Example: LDAP Utilities: Search",
+            "enabled": false
+          },
+          {
+            "id": 212,
+            "name": "Example: LDAP Utilities: Set Password",
+            "enabled": false
+          }
+        ],
+        "playbooks": [
+          {
+            "playbook_handle": "dig",
+            "display_name": "Dig"
+          },
+          {
+            "playbook_handle": "traceroute",
+            "display_name": "Traceroute"
+          },
+          {
+            "playbook_handle": "whois",
+            "display_name": "Whois"
+          },
+          {
+            "playbook_handle": "nmap_scan",
+            "display_name": "NMAP Scan"
+          },
+          {
+            "playbook_handle": "test",
+            "display_name": "test"
+          }
+        ],
+        "hash": "8a1f78cd1b0f77a54d47e45e8e70329d95286364646e1dab9cf6ad6b2a926bb1",
+        "relating": true,
+        "creator_principal": {
+          "id": 1,
+          "type": "user",
+          "name": "john_doe@company.com",
+          "display_name": "John Doe"
+        },
+        "related_incident_count": null,
+        "pending_scan_result": false,
+        "global_info": {
+          "id": 537,
+          "type": "IP Address",
+          "value": "10.10.10.10",
+          "description": null,
+          "summary": null,
+          "creator": {
+            "id": 1,
+            "type": "user",
+            "name": "john_doe@company.com",
+            "display_name": "John Doe"
+          },
+          "created": 1683824680171,
+          "last_modified_by": {
+            "id": 49,
+            "type": "apikey",
+            "name": "6bf8c47e-77a6-41ad-ad22-1004f7eee7cb",
+            "display_name": "AppBuilder"
+          },
+          "last_modified_time": 1683874117659,
+          "related_incident_count": 1,
+          "last_related_inc_id": null,
+          "last_related_inc_owner_handle": null,
+          "first_related_inc_id": null,
+          "first_related_inc_owner_handle": null,
+          "perms": {
+            "write": true
+          },
+          "first_associated_time": 1683824680171,
+          "last_associated_time": 1683824680171,
+          "properties": null,
+          "tags": [
+            {
+              "tag_handle": "Internal",
+              "value": null
+            }
+          ],
+          "version": 13,
+          "scan_option": "on",
+          "relating_incidents": true,
+          "hit_threat_sources": [],
+          "relating": true,
+          "last_scan_hits": []
+        },
+        "ip": {
+          "source": false,
+          "destination": false
+        },
+        "global_artifact": [
+          {
+            "id": 537,
+            "type": "IP Address",
+            "value": "10.10.10.10",
+            "description": null,
+            "summary": null,
+            "creator": {
+              "id": 1,
+              "type": "user",
+              "name": "john_doe@company.com",
+              "display_name": "John Doe"
+            },
+            "created": 1683824680171,
+            "last_modified_by": {
+              "id": 49,
+              "type": "apikey",
+              "name": "6bf8c47e-77a6-41ad-ad22-1004f7eee7cb",
+              "display_name": "AppBuilder"
+            },
+            "last_modified_time": 1683874117659,
+            "related_incident_count": 1,
+            "last_related_inc_id": null,
+            "last_related_inc_owner_handle": null,
+            "first_related_inc_id": null,
+            "first_related_inc_owner_handle": null,
+            "perms": {
+              "write": true
+            },
+            "first_associated_time": 1683824680171,
+            "last_associated_time": 1683824680171,
+            "properties": null,
+            "tags": [
+              {
+                "tag_handle": "Internal",
+                "value": null
+              }
+            ],
+            "version": 13,
+            "scan_option": "on",
+            "relating_incidents": true,
+            "hit_threat_sources": [],
+            "relating": true,
+            "last_scan_hits": []
+          }
+        ]
+      }
+    ]
+  },
+  "raw": null,
+  "inputs": {
+    "artifact_tag_values": "Malicious",
+    "incident_id": 2325,
+    "artifact_type_values": "IP Address,MAC Address,String",
+    "artifact_tag_method": "not_in",
+    "artifact_type_method": "in",
+    "artifact_include_incident_count": false,
+    "artifact_value_method": "contains",
+    "artifact_value": "10."
+  },
+  "metrics": {
+    "version": "1.0",
+    "package": "fn-artifact-utils",
+    "package_version": "1.0.0",
+    "host": "IBM-PF36KPAV",
+    "execution_time_ms": 879,
+    "timestamp": "2023-05-12 02:53:35"
+  }
+}

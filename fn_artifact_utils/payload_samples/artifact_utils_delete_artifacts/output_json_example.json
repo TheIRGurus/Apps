@@ -1,0 +1,33 @@
+{
+  "version": 2.0,
+  "success": true,
+  "reason": null,
+  "content": {
+    "incident_artifact_deletion": {
+      "success": true,
+      "title": null,
+      "message": null,
+      "hints": []
+    },
+    "global_artifact_deletion": {
+      "success": true,
+      "title": null,
+      "message": null,
+      "hints": []
+    }
+  },
+  "raw": null,
+  "inputs": {
+    "incident_id": 2325,
+    "artifact_id_list": "1542",
+    "artifact_remove_globally": true
+  },
+  "metrics": {
+    "version": "1.0",
+    "package": "fn-artifact-utils",
+    "package_version": "1.0.0",
+    "host": "IBM-PF36KPAV",
+    "execution_time_ms": 2354,
+    "timestamp": "2023-05-12 02:54:39"
+  }
+}

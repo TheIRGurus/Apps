@@ -1,0 +1,404 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "number"
+    },
+    "success": {
+      "type": "boolean"
+    },
+    "reason": {},
+    "content": {
+      "type": "object",
+      "properties": {
+        "537": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "type": {
+              "type": "integer"
+            },
+            "value": {
+              "type": "string"
+            },
+            "description": {},
+            "summary": {},
+            "creator": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "display_name": {
+                  "type": "string"
+                }
+              }
+            },
+            "created": {
+              "type": "integer"
+            },
+            "last_modified_by": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "display_name": {
+                  "type": "string"
+                }
+              }
+            },
+            "last_modified_time": {
+              "type": "integer"
+            },
+            "related_incident_count": {
+              "type": "integer"
+            },
+            "last_related_inc_id": {
+              "type": "integer"
+            },
+            "last_related_inc_owner_handle": {
+              "type": "integer"
+            },
+            "first_related_inc_id": {
+              "type": "integer"
+            },
+            "first_related_inc_owner_handle": {
+              "type": "integer"
+            },
+            "perms": {
+              "type": "object",
+              "properties": {
+                "write": {
+                  "type": "boolean"
+                }
+              }
+            },
+            "first_associated_time": {
+              "type": "integer"
+            },
+            "last_associated_time": {
+              "type": "integer"
+            },
+            "properties": {},
+            "tags": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "tag_handle": {
+                    "type": "integer"
+                  },
+                  "value": {}
+                }
+              }
+            },
+            "version": {
+              "type": "integer"
+            },
+            "scan_option": {
+              "type": "string"
+            },
+            "relating_incidents": {
+              "type": "boolean"
+            },
+            "hit_threat_sources": {
+              "type": "array"
+            },
+            "relating": {
+              "type": "boolean"
+            },
+            "last_scan_hits": {
+              "type": "array"
+            }
+          }
+        },
+        "542": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "type": {
+              "type": "integer"
+            },
+            "value": {
+              "type": "string"
+            },
+            "description": {},
+            "summary": {},
+            "creator": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "display_name": {
+                  "type": "string"
+                }
+              }
+            },
+            "created": {
+              "type": "integer"
+            },
+            "last_modified_by": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "display_name": {
+                  "type": "string"
+                }
+              }
+            },
+            "last_modified_time": {
+              "type": "integer"
+            },
+            "related_incident_count": {
+              "type": "integer"
+            },
+            "last_related_inc_id": {
+              "type": "integer"
+            },
+            "last_related_inc_owner_handle": {
+              "type": "integer"
+            },
+            "first_related_inc_id": {
+              "type": "integer"
+            },
+            "first_related_inc_owner_handle": {
+              "type": "integer"
+            },
+            "perms": {
+              "type": "object",
+              "properties": {
+                "write": {
+                  "type": "boolean"
+                }
+              }
+            },
+            "first_associated_time": {
+              "type": "integer"
+            },
+            "last_associated_time": {
+              "type": "integer"
+            },
+            "properties": {},
+            "tags": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "tag_handle": {
+                    "type": "integer"
+                  },
+                  "value": {}
+                }
+              }
+            },
+            "version": {
+              "type": "integer"
+            },
+            "scan_option": {
+              "type": "string"
+            },
+            "relating_incidents": {
+              "type": "boolean"
+            },
+            "hit_threat_sources": {
+              "type": "array"
+            },
+            "relating": {
+              "type": "boolean"
+            },
+            "last_scan_hits": {
+              "type": "array"
+            }
+          }
+        },
+        "543": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "type": {
+              "type": "integer"
+            },
+            "value": {
+              "type": "string"
+            },
+            "description": {},
+            "summary": {},
+            "creator": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "display_name": {
+                  "type": "string"
+                }
+              }
+            },
+            "created": {
+              "type": "integer"
+            },
+            "last_modified_by": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "display_name": {
+                  "type": "string"
+                }
+              }
+            },
+            "last_modified_time": {
+              "type": "integer"
+            },
+            "related_incident_count": {
+              "type": "integer"
+            },
+            "last_related_inc_id": {
+              "type": "integer"
+            },
+            "last_related_inc_owner_handle": {
+              "type": "integer"
+            },
+            "first_related_inc_id": {
+              "type": "integer"
+            },
+            "first_related_inc_owner_handle": {
+              "type": "integer"
+            },
+            "perms": {
+              "type": "object",
+              "properties": {
+                "write": {
+                  "type": "boolean"
+                }
+              }
+            },
+            "first_associated_time": {
+              "type": "integer"
+            },
+            "last_associated_time": {
+              "type": "integer"
+            },
+            "properties": {},
+            "tags": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "tag_handle": {
+                    "type": "integer"
+                  },
+                  "value": {}
+                }
+              }
+            },
+            "version": {
+              "type": "integer"
+            },
+            "scan_option": {
+              "type": "string"
+            },
+            "relating_incidents": {
+              "type": "boolean"
+            },
+            "hit_threat_sources": {
+              "type": "array"
+            },
+            "relating": {
+              "type": "boolean"
+            },
+            "last_scan_hits": {
+              "type": "array"
+            }
+          }
+        }
+      }
+    },
+    "raw": {},
+    "inputs": {
+      "type": "object",
+      "properties": {
+        "artifact_tag_values": {
+          "type": "string"
+        },
+        "incident_id": {
+          "type": "integer"
+        },
+        "artifact_id_list": {
+          "type": "string"
+        }
+      }
+    },
+    "metrics": {
+      "type": "object",
+      "properties": {
+        "version": {
+          "type": "string"
+        },
+        "package": {
+          "type": "string"
+        },
+        "package_version": {
+          "type": "string"
+        },
+        "host": {
+          "type": "string"
+        },
+        "execution_time_ms": {
+          "type": "integer"
+        },
+        "timestamp": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
