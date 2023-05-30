@@ -95,6 +95,8 @@ If deploying to a SOAR platform with an integration server, the requirements are
   | ---- | ----------- |
   | Org Data | Read |
   | Function | Read |
+  | Incidents | Read |
+  | Incident Fields | Edit |
   | Global Artifacts | View |
   | Global Artifacts | Create |
   | Global Artifacts | Edit |
