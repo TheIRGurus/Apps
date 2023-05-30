@@ -90,7 +90,7 @@ class FunctionComponent(AppFunctionComponent):
         """
         Required Functions
         """
-        def verify_entries(uri, item_value):
+        def verify_entries(uri, item_value, entity_type):
             """Function used to verify that the user provided values exist within the platform providing back their IDs"""
             # Grab available Items from SOAR Instance.
             soar_items = res_client.get(uri)
@@ -107,7 +107,7 @@ class FunctionComponent(AppFunctionComponent):
                 if item in items_available:
                     item_type_list.append(items_dict[item])
                 else:
-                    raise IntegrationError("No Value found: {}".format(item))
+                    raise IntegrationError("No {} found: {}".format(entity_type, item))
             
             # Return Verified Item List.
             return(item_type_list)
@@ -117,11 +117,11 @@ class FunctionComponent(AppFunctionComponent):
         Check Artifact and Tag types.
         """
         if artifact_type_values:
-            artifact_type_list = verify_entries('/artifact_types?handle_format=names', artifact_type_values)
+            artifact_type_list = verify_entries('/artifact_types?handle_format=names', artifact_type_values, 'artifact')
             self.LOG.info("Artifact Type IDs: %s", artifact_type_list)
         
         if artifact_tag_values:
-            artifact_tag_list = verify_entries('/tags/data?handle_format=names&exclude_unused=false', artifact_tag_values)
+            artifact_tag_list = verify_entries('/tags/data?handle_format=names&exclude_unused=false', artifact_tag_values, 'Tag')
             self.LOG.info("Artifact Tag IDs: %s", artifact_tag_list)
         
         
