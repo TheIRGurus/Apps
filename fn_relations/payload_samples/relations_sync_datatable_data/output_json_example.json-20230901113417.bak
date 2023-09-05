@@ -1,0 +1,28 @@
+{
+  "version": 2.0,
+  "success": true,
+  "reason": null,
+  "content": {
+    "datatables": [
+      "ldap_users"
+    ],
+    "rows": null,
+    "incidents": [
+      2799
+    ]
+  },
+  "raw": null,
+  "inputs": {
+    "relations_datatables": "ldap_users",
+    "incident_id": 2801,
+    "relations_exclude_datatables": "dt_relations_child_incidents"
+  },
+  "metrics": {
+    "version": "1.0",
+    "package": "fn-relations",
+    "package_version": "2.0.0",
+    "host": "IBM-PF36KPAV",
+    "execution_time_ms": 903,
+    "timestamp": "2023-08-30 21:11:11"
+  }
+}

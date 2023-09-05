@@ -1,0 +1,26 @@
+{
+  "version": 2.0,
+  "success": true,
+  "reason": null,
+  "content": {
+    "new_note": {
+      "text": {
+        "format": "html",
+        "content": "Note from Parent Incident: <a href=\"#incidents/2799\" target=\"_blank\">2799</a><br>Task: <a href=\"#incidents/2799?taskId=611&tabName=comments\" target=\"_blank\">New Task for the Children</a><br>Note ID: 405<br>On Date: 08/30/2023 20:50:21<br>By: John Doe<br><br><div class=\"rte\"><div>Reply to the private note on the task!</div></div>"
+      }
+    }
+  },
+  "raw": null,
+  "inputs": {
+    "relations_note_id": 405,
+    "task_id": 611
+  },
+  "metrics": {
+    "version": "1.0",
+    "package": "fn-relations",
+    "package_version": "2.0.0",
+    "host": "IBM-PF36KPAV",
+    "execution_time_ms": 8600,
+    "timestamp": "2023-08-30 20:50:39"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "version": 2.0,
+  "success": true,
+  "reason": null,
+  "content": {
+    "artifact": {
+      "type": "String",
+      "value": "windowsvmos2",
+      "description": "Artifact Synced from incident 2795. created from Sentinel entity: cb1a7e68-4ff3-9aef-4224-e2b3b5adbdbc"
+    },
+    "incidents": [
+      2797,
+      2796,
+      2798
+    ]
+  },
+  "raw": null,
+  "inputs": {
+    "incident_id": 2795,
+    "artifact_id": 3805
+  },
+  "metrics": {
+    "version": "1.0",
+    "package": "fn-relations",
+    "package_version": "2.0.0",
+    "host": "IBM-PF36KPAV",
+    "execution_time_ms": 5944,
+    "timestamp": "2023-08-30 23:27:26"
+  }
+}

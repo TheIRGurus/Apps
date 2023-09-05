@@ -1,0 +1,30 @@
+{
+  "version": 2.0,
+  "success": true,
+  "reason": null,
+  "content": {
+    "artifact": {
+      "type": "User Account",
+      "value": "dladd",
+      "description": "Artifact Synced from incident 2799."
+    },
+    "incidents": [
+      2801,
+      2800,
+      2802
+    ]
+  },
+  "raw": null,
+  "inputs": {
+    "incident_id": 2799,
+    "artifact_id": 3831
+  },
+  "metrics": {
+    "version": "1.0",
+    "package": "fn-relations",
+    "package_version": "2.0.0",
+    "host": "IBM-PF36KPAV",
+    "execution_time_ms": 5342,
+    "timestamp": "2023-08-30 20:54:25"
+  }
+}

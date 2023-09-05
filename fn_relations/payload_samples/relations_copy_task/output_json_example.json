@@ -1,0 +1,32 @@
+{
+  "version": 2.0,
+  "success": true,
+  "reason": null,
+  "content": {
+    "task": {
+      "name": "Task 615 from Parent: New Task for the Kids",
+      "due_date": 1693454400000,
+      "phase_id": "Containment & Remediation",
+      "required": true,
+      "instructions": "<div class=\"rte\"><div>This is a instruction list for the new task!</div></div>"
+    },
+    "children": [
+      2797,
+      2796,
+      2798
+    ]
+  },
+  "raw": null,
+  "inputs": {
+    "task_id": 615,
+    "relations_parent_incident_id": 2795
+  },
+  "metrics": {
+    "version": "1.0",
+    "package": "fn-relations",
+    "package_version": "2.0.0",
+    "host": "IBM-PF36KPAV",
+    "execution_time_ms": 7216,
+    "timestamp": "2023-08-30 23:29:46"
+  }
+}

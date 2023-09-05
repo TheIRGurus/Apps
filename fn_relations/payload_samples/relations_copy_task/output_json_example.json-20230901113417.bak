@@ -1,0 +1,32 @@
+{
+  "version": 2.0,
+  "success": true,
+  "reason": null,
+  "content": {
+    "task": {
+      "name": "Task 611 from Parent: New Task for the Children",
+      "due_date": 1693454400000,
+      "phase_id": "Post-Incident",
+      "required": true,
+      "instructions": "<div class=\"rte\"><div>These are the instructions I want to send the Children of the corn!</div></div>"
+    },
+    "children": [
+      2801,
+      2800,
+      2802
+    ]
+  },
+  "raw": null,
+  "inputs": {
+    "task_id": 611,
+    "relations_parent_incident_id": 2799
+  },
+  "metrics": {
+    "version": "1.0",
+    "package": "fn-relations",
+    "package_version": "2.0.0",
+    "host": "IBM-PF36KPAV",
+    "execution_time_ms": 7524,
+    "timestamp": "2023-08-30 20:47:58"
+  }
+}

@@ -23,7 +23,7 @@ def snake_to_camel(word):
 setup(
     name="fn_relations",
     display_name="Parent/Child Relationships",
-    version="1.0.2",
+    version="2.0.0",
     license="Apache",
     author="Nick Mumaw",
     author_email="Nick.Mumaw@ibm.com",

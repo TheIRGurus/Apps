@@ -1,0 +1,27 @@
+{
+  "version": 2.0,
+  "success": true,
+  "reason": null,
+  "content": {
+    "new_note": {
+      "text": {
+        "format": "html",
+        "content": "Response from Child Incident: <a href=\"#incidents/2796\" target=\"_blank\">2796</a><br>Task: <a href=\"#incidents/2796?taskId=617&tabName=comments\" target=\"_blank\">Task 615 from Parent: New Task for the Kids</a><br>Note ID: 413<br>On Date: 08/30/2023 23:31:03<br>By: John Doe<br><br><div class=\"rte\"><div>Sure looks like you can!</div></div>"
+      },
+      "parent_id": "409"
+    }
+  },
+  "raw": null,
+  "inputs": {
+    "relations_note_id": 413,
+    "task_id": 617
+  },
+  "metrics": {
+    "version": "1.0",
+    "package": "fn-relations",
+    "package_version": "2.0.0",
+    "host": "IBM-PF36KPAV",
+    "execution_time_ms": 4242,
+    "timestamp": "2023-08-30 23:31:10"
+  }
+}

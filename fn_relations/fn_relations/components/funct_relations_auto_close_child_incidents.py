@@ -1,82 +1,74 @@
 # -*- coding: utf-8 -*-
-# pragma pylint: disable=unused-argument, no-self-use
-"""Function implementation"""
+# Generated with resilient-sdk v49.1.51
 
-import logging
-from resilient_circuits import ResilientComponent, function, handler, StatusMessage, FunctionResult, FunctionError
+"""AppFunction implementation"""
+
+from resilient_circuits import AppFunctionComponent, app_function, FunctionResult
+from resilient_lib import IntegrationError, validate_fields
 from fn_relations.lib.utilities import list_open_children
 
 
-class FunctionComponent(ResilientComponent):
-    """Component that implements Resilient function 'relations_auto_close_child_incidents"""
+PACKAGE_NAME = "fn_relations"
+FN_NAME = "relations_auto_close_child_incidents"
+
+
+class FunctionComponent(AppFunctionComponent):
+    """Component that implements function 'relations_auto_close_child_incidents'"""
 
     def __init__(self, opts):
-        """constructor provides access to the configuration options"""
-        super(FunctionComponent, self).__init__(opts)
-        self.options = opts.get("fn_relations", {})
+        super(FunctionComponent, self).__init__(opts, PACKAGE_NAME)
 
-    @handler("reload")
-    def _reload(self, event, opts):
-        """Configuration options have changed, save new values"""
-        self.options = opts.get("fn_relations", {})
+    @app_function(FN_NAME)
+    def _app_function(self, fn_inputs):
+        """
+        Function: Close child incidents when the parent incident is closed.
+        Inputs:
+            -   fn_inputs.relations_parent_incident_id
+        """
 
-    @function("relations_auto_close_child_incidents")
-    def _relations_auto_close_child_incidents_function(self, event, *args, **kwargs):
-        """Function: Close child incidents when the parent incident is closed."""
-        try:
-            # Get the wf_instance_id of the workflow this Function was called in
-            wf_instance_id = event.message["workflow_instance"]["workflow_instance_id"]
+        yield self.status_message(f"Starting App Function: '{FN_NAME}'")
 
-            # Get the function parameters:
-            relations_parent_incident_id = kwargs.get("relations_parent_incident_id")  # number
-
-            log = logging.getLogger(__name__)
-            log.info("relations_parent_incident_id: %s", relations_parent_incident_id)
-
-
-            def close_child(incident):
-                parent_incident = self.rest_client().get("/incidents/{}".format(relations_parent_incident_id))
-                log.info('Updating Required on Close Fields')
-                for req_field in req_fields:
-                    if req_field.get(None):
-                        if list(req_field.values())[0] == 'resolution_summary':
-                            incident[list(req_field.values())[0]] = "Per Resolution Summary of the Parent:<br><br>" + parent_incident[list(req_field.values())[0]]
-                        else:
-                            incident[list(req_field.values())[0]] = parent_incident[list(req_field.values())[0]]                        
+        # Example validating required fn_inputs
+        validate_fields(["relations_parent_incident_id"], fn_inputs)
+        
+        relations_parent_incident_id = fn_inputs.relations_parent_incident_id
+        self.LOG.info("relations_parent_incident_id: {}".format(relations_parent_incident_id))
+        
+        def close_child(incident):
+            parent_incident = self.rest_client().get("/incidents/{}".format(relations_parent_incident_id))
+            self.LOG.info('Updating Required on Close Fields')
+            for req_field in req_fields:
+                if req_field.get(None):
+                    if list(req_field.values())[0] == 'resolution_summary':
+                        incident[list(req_field.values())[0]] = "Per Resolution Summary of the Parent:<br><br>" + parent_incident[list(req_field.values())[0]]
                     else:
-                        incident[list(req_field.keys())[0]][list(req_field.values())[0]] = parent_incident[list(req_field.keys())[0]][list(req_field.values())[0]]
-                incident["plan_status"] = 'C'
-                incident["end_date"] = parent_incident['end_date']
-                return(incident)
+                        incident[list(req_field.values())[0]] = parent_incident[list(req_field.values())[0]]                        
+                else:
+                    incident[list(req_field.keys())[0]][list(req_field.values())[0]] = parent_incident[list(req_field.keys())[0]][list(req_field.values())[0]]
+            incident["plan_status"] = 'C'
+            incident["end_date"] = parent_incident['end_date']
+            return(incident)        
 
 
-            # PUT YOUR FUNCTION IMPLEMENTATION CODE HERE
-            yield StatusMessage("starting...")
-            
-            
-            log.info('Gathering Child Incident List')
-            incidents = list_open_children(self.rest_client().get("/incidents/{}/table_data/dt_relations_child_incidents?handle_format=names".format(relations_parent_incident_id)))
-            
-            fields = self.rest_client().get("/types/incident/fields")
-            log.info('Creating List of Fields Required on close')
-            req_fields = []
-            for field in fields:
-                if field.get('required') == 'close':
-                    req_fields.append({field['prefix']: field['name']})
-            log.debug('Fields required on Close: {}'.format(req_fields))                                
-            
-            for incident in incidents:
-                log.info('Closing Incident: {}'.format(incident))
-                self.rest_client().get_put("/incidents/{}".format(incident),close_child)
+        self.LOG.info('Gathering Child Incident List')
+        incidents = list_open_children(self.rest_client().get("/incidents/{}/table_data/dt_relations_child_incidents?handle_format=names".format(relations_parent_incident_id)))
+        
+        fields = self.rest_client().get("/types/incident/fields")
+        self.LOG.info('Creating List of Fields Required on close')
+        req_fields = []
+        for field in fields:
+            if field.get('required') == 'close':
+                req_fields.append({field['prefix']: field['name']})
+        self.LOG.debug('Fields required on Close: {}'.format(req_fields))                                
+        
+        for incident in incidents:
+            self.LOG.info('Closing Incident: {}'.format(incident))
+            self.rest_client().get_put("/incidents/{}".format(incident),close_child)
                 
-                    
-            yield StatusMessage("done...")
 
-            results = {
-                "success": True
-            }
+        yield self.status_message(f"Finished running App Function: '{FN_NAME}'")
 
-            # Produce a FunctionResult with the results
-            yield FunctionResult(results)
-        except Exception:
-            yield FunctionError()
+        results = {"incidents": incidents}
+
+        yield FunctionResult(results)
+        # yield FunctionResult({}, success=False, reason="Bad call")
