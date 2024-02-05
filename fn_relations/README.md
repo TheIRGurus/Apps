@@ -1,4 +1,6 @@
-# Parent/Child Relationships
+# Parent/Child Relationships (<font color=red>Discontinued</font>)
+
+<font color=red>**This app and its playbooks have been discontinued due to this integration being officially picked up and maintained by IBM as QRadar Incident Relations**</font>
 
 ## Table of Contents
 - [Release Notes](#release-notes)
